@@ -16,7 +16,6 @@ export async function GET(request: NextRequest) {
       success: true,
       message: 'Productos sincronizados exitosamente',
       count: products.length,
-      objectIDs: result.objectIDs,
     }, { status: 200 });
     
   } catch (error) {
